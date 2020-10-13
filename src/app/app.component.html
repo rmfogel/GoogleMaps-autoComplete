@@ -1,8 +1,11 @@
 <input  ngx-google-places-autocomplete #placesRef="ngx-places"
   (onAddressChange)="handleDestinationChange($event)" placeholder="Address to">‏
+  <agm-map [latitude]="lat" [longitude]="lng">
+   <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+  </agm-map>
 
   <p>
-    מתקינים 3 ספריות:
+    מתקינים  ספריות:
     npm i ngx-loading
     npm install ngx-google-places-autocomplete
     npm install  @agm/core

@@ -9,7 +9,8 @@ import {GooglePlaceDirective} from 'ngx-google-places-autocomplete';
 })
 export class AppComponent {
   title = 'autoCompleteGoogleMaps';
-
+  lat = 51.678418;
+  lng = 7.809007;
 
  handleDestinationChange(a:Address){
     
